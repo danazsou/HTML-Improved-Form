@@ -12,13 +12,18 @@
     </nav>
     <main>
         <h2>Vacation Content Sign-Up Form</h2>
+
+        <!--always use GET tp maintain privacy-->
         <form method="GET" action="results.html">
             <div>
+                <!--adding restrictions and boolian attributes to below
+                 -->
                 <label for="firstname">Your First Name<span class="required-field">*</span></label>
                 <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35" required>
                 <label for="lastname">Your Last Name<span class="required-field">*</span></label>
                 <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required>
                 <label for="age">Your Age</label>
+                <!--putting restrictions age input to numbers-->
                 <input type="number" id="age" name="age" min="21" max="120">
                 <label for="password">Your Secret Code (must be 6 alphanumeric characters)<span class="required-field">*</span></label>
                 <input type="password" id="password" name="password" pattern="[0-9a-zA-Z]{6}" title="6-Character Alphanumeric Pass Code" required>
